@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     background: url(/background.png) no-repeat;
     background-color: var(--background);
-    background-size: auto;
+    background-size: cover;
     color: var(--white);
   }
 
