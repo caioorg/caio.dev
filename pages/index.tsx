@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import Link from 'next/link'
 import { FiArrowRight } from 'react-icons/fi'
 import { paths } from '@utils/path'
@@ -7,7 +8,11 @@ import { Container, Navigation, Menu, MenuItem, Name, Resume, About, Experience,
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <>
+      <Head>
+        <title>Welcome | Caio</title>
+      </Head>
+      <Container>
       <Navigation>
         <Name>CAIO<sub>.dev</sub></Name>
         <Menu>
@@ -28,7 +33,7 @@ const Home: NextPage = () => {
             <hr />
             <p>
               Among many things I like to do most in this life, one of them is
-              being a Front-End developer, seeing an application solving a customer's
+              being a Front-End developer, seeing an application solving a customer&apos;s
               problem and being satisfied is like having been part of it.
             </p>
 
@@ -51,6 +56,7 @@ const Home: NextPage = () => {
         </Resume>
       </main>
     </Container>
+    </>
   )
 }
 
