@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { pixelToRem } from '@styles/pxToRem';
+import { device } from '@styles/responsive';
 
 export const Container = styled.div`
   padding-bottom: ${pixelToRem(120)};
+
+  @media ${device.mobileS} {
+    padding-bottom: ${pixelToRem(30)};
+  }
 
   & h3 {
     font-size: ${pixelToRem(40)};
@@ -16,6 +21,11 @@ export const Container = styled.div`
       display: block;
       border-radius: 8px;
     }
+
+    @media ${device.mobileS} {
+      font-size: ${pixelToRem(28)};
+      margin-bottom: ${pixelToRem(24)};
+    }
   }
 `;
 
@@ -25,6 +35,11 @@ export const CardContainer = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 32px;
   grid-row-gap: 8px;
+
+  @media ${device.mobileS} {
+    grid-template-columns: 1fr;
+    grid-row-gap: ${pixelToRem(32)};
+  }
 `
 
 export const Card = styled.div`
@@ -40,4 +55,6 @@ export const Card = styled.div`
     display: block;
     max-height: ${pixelToRem(250)};
   }
+
+
 `

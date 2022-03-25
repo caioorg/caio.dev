@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { pixelToRem } from '@styles/pxToRem';
+import { device } from '@styles/responsive';
 
 export const Container = styled.footer`
   width: 100%;
@@ -8,6 +9,10 @@ export const Container = styled.footer`
   padding: ${pixelToRem(43)} ${pixelToRem(120)};
   gap: ${pixelToRem(32)};
   flex-direction: row;
+
+  @media ${device.mobileS} {
+    padding: ${pixelToRem(20)}
+  }
 
   & a {
     font-size: ${pixelToRem(24)}
