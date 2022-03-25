@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import background from '@images/background.png';
+import { hexToRGB } from './hexToRGB'
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -15,6 +15,23 @@ export const GlobalStyles = createGlobalStyle`
     background-size: auto;
     color: var(--white);
   }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: ${hexToRGB('#F8E7A1', 0.7)}; 
+    border-radius: 10px;
+  }
+  
   :root {
     --background: #030E21;
     --white: #FFFFFF;
