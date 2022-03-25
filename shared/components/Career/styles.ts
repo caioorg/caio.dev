@@ -1,7 +1,9 @@
-import { pixelToRem } from '@styles/pxToRem';
 import styled from 'styled-components';
+import { pixelToRem } from '@styles/pxToRem';
 
 export const Container = styled.div`
+  padding-bottom: ${pixelToRem(120)};
+
   & h3 {
     font-size: ${pixelToRem(40)};
     margin-bottom: ${pixelToRem(32)};

@@ -5,7 +5,7 @@ import { Container } from './styles';
 
 const MyTechnologies: React.FC = () => {
   return (
-    <Container>
+    <Container id='technologies'>
       <DiHtml5 />
       <DiCss3 />
       <DiSass />

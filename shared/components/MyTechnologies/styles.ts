@@ -4,6 +4,7 @@ import { hexToRGB } from '@styles/hexToRGB'
 
 export const Container = styled.div`
   width: 100%;
+  border-radius: 8px;
   margin-bottom: ${pixelToRem(150)};
   background: ${hexToRGB('#091427', 0.6)};
   backdrop-filter: blur(8px);

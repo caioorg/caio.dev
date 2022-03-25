@@ -6,7 +6,7 @@ import { About, Experience, Me, Container } from './styles'
 
 const Resume: React.FC = () => {
   return (
-    <Container>
+    <Container id='about'>
       <About>
         <h3>Front End Developer</h3>
         <h2>Caio Almeida</h2>
@@ -17,7 +17,7 @@ const Resume: React.FC = () => {
           problem and being satisfied is like having been part of it.
         </p>
 
-        <Link href='#' passHref>
+        <Link href='#contact' passHref>
           <a>
             Let’s talk
             <FiArrowRight />   

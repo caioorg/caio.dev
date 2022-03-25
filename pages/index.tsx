@@ -4,6 +4,7 @@ import Header from '@components/Header'
 import Resume from '@components/Resume'
 import MyTechnologies from '@components/MyTechnologies'
 import Career from '@components/Career'
+import Footer from '@components/Footer'
 import { Container } from '@styles/home'
 
 const Home: NextPage = () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
           <MyTechnologies />
           <Career />
         </main>
+        <Footer />
       </Container>
     </>
   )
