@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { hexToRGB } from './hexToRGB'
+import { device } from "./responsive";
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -16,6 +17,14 @@ export const GlobalStyles = createGlobalStyle`
     background-color: var(--background);
     background-size: cover;
     color: var(--white);
+    
+    @media ${device.mobileS} {
+      background-size: auto;
+    }
+
+    @media ${device.tablet} {
+      background-size: auto;
+    }
   }
 
   ::-webkit-scrollbar {

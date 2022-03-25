@@ -40,6 +40,10 @@ export const CardContainer = styled.div`
     grid-template-columns: 1fr;
     grid-row-gap: ${pixelToRem(32)};
   }
+
+  @media ${device.tablet} {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 
 export const Card = styled.div`

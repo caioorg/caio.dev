@@ -21,6 +21,10 @@ export const About = styled.div`
     margin-bottom: ${pixelToRem(60)};
   }
 
+  @media ${device.tablet} {
+    max-width: ${pixelToRem(384)}
+  }
+
   & p {
     padding-right: ${pixelToRem(150)};
     font-size: ${pixelToRem(16)};
@@ -99,6 +103,12 @@ export const Experience = styled.div`
     max-width: ${pixelToRem(147.5)};
     gap: ${pixelToRem(25)};
   }
+
+  @media ${device.tablet} {
+    max-width: ${pixelToRem(384)}
+  }
+
+  
 
   & h4 {
     font-size: ${pixelToRem(24)};
