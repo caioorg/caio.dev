@@ -2,9 +2,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { FiArrowRight } from 'react-icons/fi'
+import { DiGithubFull, DiReact, DiCss3, DiHtml5, DiJsBadge, DiSass, DiNodejsSmall } from 'react-icons/di'
+import { FaAws } from 'react-icons/fa'
 import { paths } from '@utils/path'
 import { resumeExperience } from '@utils/experiences'
-import { Container, Navigation, Menu, MenuItem, Name, Resume, About, Experience, Me } from '@styles/home'
+import { Container, Navigation, Menu, MenuItem, Name, Resume, About, Experience, Me, Technologies } from '@styles/home'
 
 const Home: NextPage = () => {
   return (
@@ -54,6 +56,16 @@ const Home: NextPage = () => {
             ))}
           </Experience>
         </Resume>
+        <Technologies>
+          <DiHtml5 />
+          <DiCss3 />
+          <DiSass />
+          <DiJsBadge />
+          <DiGithubFull />
+          <DiReact />
+          <DiNodejsSmall />
+          <FaAws />
+        </Technologies>
       </main>
     </Container>
     </>
