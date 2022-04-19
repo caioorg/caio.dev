@@ -26,7 +26,7 @@ const Resume: React.FC = () => {
       </About>
       <picture>
         <source srcSet="/me.avif" type="image/avif" />
-        <Me src='/me.jpg' alt="I'm Caio" />
+        <Me src='/me.jpg' alt="I'm Caio" loading="lazy" />
       </picture>
       <Experience>
         {resumeExperience.map(({ label, number }) => (
