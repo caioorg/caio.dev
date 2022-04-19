@@ -2,14 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 import { FiArrowRight } from 'react-icons/fi'
 import { resumeExperience } from '@utils/experiences'
-import { About, Experience, Me, Container } from './styles'
+import { About, Experience, Me, Container, Name, Profession  } from './styles'
 
 const Resume: React.FC = () => {
   return (
     <Container id='about'>
       <About>
-        <h3>Front End Developer</h3>
-        <h2>Caio Almeida</h2>
+        <Profession>Front End Developer</Profession>
+        <Name>Caio Almeida</Name>
         <hr />
         <p>
           Among many things I like to do most in this life, one of them is

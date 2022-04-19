@@ -9,7 +9,7 @@ export const Container = styled.section`
   justify-content: space-between;
 `
 
-export const About = styled.section`
+export const About = styled.div`
   margin-bottom: ${pixelToRem(120)};
   padding-top: ${pixelToRem(72)};
   max-width: ${pixelToRem(592)};
@@ -39,29 +39,6 @@ export const About = styled.section`
     }
   }
 
-  & h3 {
-    font-weight: 600;
-    font-size: ${pixelToRem(47)};
-    color: ${hexToRGB('#868490')};
-
-    @media ${device.mobileS} {
-      font-size: ${pixelToRem(20)};
-    }
-  }
-
-  & h2 {
-    font-weight: 600;
-    font-size: ${pixelToRem(80)};
-    color var(--white);
-    margin-bottom: ${pixelToRem(24)};
-    
-    @media ${device.mobileS} {
-      font-size: ${pixelToRem(28)};
-      margin-bottom: ${pixelToRem(12)};
-    }
-  }
-
-
   & hr {
     width: ${pixelToRem(283)};
     height: ${pixelToRem(8)};
@@ -89,6 +66,27 @@ export const About = styled.section`
       font-size: ${pixelToRem(12)};
       gap: ${pixelToRem(25)};
     }
+  }
+`
+export const Profession = styled.div`
+  font-weight: 600;
+  font-size: ${pixelToRem(47)};
+  color: ${hexToRGB('#868490')};
+
+  @media ${device.mobileS} {
+    font-size: ${pixelToRem(20)};
+  }
+`
+
+export const Name = styled.div`
+  font-weight: 600;
+  font-size: ${pixelToRem(80)};
+  color var(--white);
+  margin-bottom: ${pixelToRem(24)};
+
+  @media ${device.mobileS} {
+    font-size: ${pixelToRem(28)};
+    margin-bottom: ${pixelToRem(12)};
   }
 `
 
