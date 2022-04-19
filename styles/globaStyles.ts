@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    background: url(/background.png) no-repeat;
+    background: url(/background.avif) no-repeat;
     background-color: var(--background);
     background-size: cover;
     color: var(--white);
