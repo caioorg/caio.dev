@@ -9,7 +9,7 @@ export const Container = styled.section`
   justify-content: space-between;
 `
 
-export const About = styled.div`
+export const About = styled.section`
   margin-bottom: ${pixelToRem(120)};
   padding-top: ${pixelToRem(72)};
   max-width: ${pixelToRem(592)};
