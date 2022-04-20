@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FiArrowRight } from 'react-icons/fi'
 import { resumeExperience } from '@utils/experiences'
-import { About, Experience, Me, Container, Name, Profession  } from './styles'
+import { About, Experience, Me, Container, Name, Profession, ExperienceDescription, ExperienceCount  } from './styles'
 
 const Resume: React.FC = () => {
   return (
@@ -31,8 +31,8 @@ const Resume: React.FC = () => {
       <Experience>
         {resumeExperience.map(({ label, number }) => (
           <div key={label}>
-            <h4>{label}</h4>
-            <h5>{number} +</h5>
+            <ExperienceDescription>{label}</ExperienceDescription>
+            <ExperienceCount>{number} +</ExperienceCount>
           </div>
         ))}
       </Experience>
