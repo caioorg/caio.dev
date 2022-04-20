@@ -90,7 +90,7 @@ export const Name = styled.div`
   }
 `
 
-export const Experience = styled.section`
+export const Experience = styled.div`
   text-align: right;
   max-width: ${pixelToRem(178)};
   display: flex;
@@ -106,18 +106,6 @@ export const Experience = styled.section`
     max-width: ${pixelToRem(384)}
   }
 
-  
-
-  & h4 {
-    font-size: ${pixelToRem(24)};
-    font-weight: 500;
-    color: #868490;
-    
-    @media ${device.mobileS} {
-      font-size: ${pixelToRem(16)};
-    }
-  }
-
   & h5 {
     font-size: ${pixelToRem(52)};
     font-weight: 600;
@@ -125,6 +113,25 @@ export const Experience = styled.section`
     @media ${device.mobileS} {
       font-size: ${pixelToRem(24)};
     }
+  }
+`
+
+export const ExperienceDescription = styled.p`
+  font-size: ${pixelToRem(24)};
+  font-weight: 500;
+  color: #868490;
+  
+  @media ${device.mobileS} {
+    font-size: ${pixelToRem(16)};
+  }
+`
+
+export const ExperienceCount = styled.p`
+  font-size: ${pixelToRem(52)};
+  font-weight: 600;
+
+  @media ${device.mobileS} {
+    font-size: ${pixelToRem(24)};
   }
 `
 
