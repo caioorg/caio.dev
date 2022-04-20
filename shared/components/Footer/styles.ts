@@ -15,7 +15,7 @@ export const Container = styled.footer`
   }
 
   & a {
-    font-size: ${pixelToRem(24)}
+    font-size: 0
   }
 
   & svg {
