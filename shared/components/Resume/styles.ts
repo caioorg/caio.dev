@@ -90,7 +90,7 @@ export const Name = styled.div`
   }
 `
 
-export const Experience = styled.div`
+export const Experience = styled.section`
   text-align: right;
   max-width: ${pixelToRem(178)};
   display: flex;
