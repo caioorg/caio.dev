@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { resumeWorking } from '@utils/experiences';
-import { Container, Card, CardContainer } from './styles';
+import { Container, Card, CardContainer, Title } from './styles';
 
 const Career: React.FC = () => {
   const parseDate = useCallback((date: string | undefined) => {
@@ -14,7 +14,7 @@ const Career: React.FC = () => {
 
   return (
     <Container id='carrer'>
-      <h3>Carrer</h3>
+      <Title>Carrer</Title>
       <CardContainer>
         {resumeWorking.map((item, index) => (
           <Card key={index}>

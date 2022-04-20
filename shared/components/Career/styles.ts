@@ -8,26 +8,26 @@ export const Container = styled.div`
   @media ${device.mobileS} {
     padding-bottom: ${pixelToRem(30)};
   }
-
-  & h3 {
-    font-size: ${pixelToRem(40)};
-    margin-bottom: ${pixelToRem(32)};
-
-    &::after {
-      content: "";
-      width: ${pixelToRem(50)};
-      height: ${pixelToRem(5)};
-      background: var(--yellow);
-      display: block;
-      border-radius: 8px;
-    }
-
-    @media ${device.mobileS} {
-      font-size: ${pixelToRem(28)};
-      margin-bottom: ${pixelToRem(24)};
-    }
-  }
 `;
+
+export const Title = styled.p`
+  font-size: ${pixelToRem(40)};
+  margin-bottom: ${pixelToRem(32)};
+
+  &::after {
+    content: "";
+    width: ${pixelToRem(50)};
+    height: ${pixelToRem(5)};
+    background: var(--yellow);
+    display: block;
+    border-radius: 8px;
+  }
+
+  @media ${device.mobileS} {
+    font-size: ${pixelToRem(28)};
+    margin-bottom: ${pixelToRem(24)};
+  }
+`
 
 export const CardContainer = styled.div`
   display: grid;
